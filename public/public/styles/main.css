@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #40514E;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: #66bfbf;
+    font-size: 5.5rem;
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+}
+
+h2 {
+    color: #66bfbf;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    padding-top: 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 150px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 150px;
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+hr {
+    border: dotted #EAF6F6 5px;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
+}
+
+.skill1,
+.skill2 {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 100px auto 100px auto;
+}
+.details ul{
+    margin: 10px 0;
+} 
+.web-dev-image {
+    width: 50%;
+    text-align: right;
+}
+
+.Programming-image {
+    width: 50%;
+    text-align: right;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+
+}
+
+.btn {
+    background: #11cdd4;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn:hover {
+    background: #30e3cb;
+}
+
+.footer a{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #EAF6F6;
+}
+.bottom-container{
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+}
+.copyright{
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+.project img{
+    width: 40%;
+    margin: 20px auto 5px auto;
+}
+.project{
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+}
+.project a{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+.profile img {
+    width: 10rem;
+}

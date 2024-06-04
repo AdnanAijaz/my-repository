@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adnan's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="top-container">
+      <img
+        src="../public/assets/images/cloud.png"
+        alt="cloud image"
+        class="top-cloud"
+      />
+      <div class="text-title">
+        <h1>I'm Adnan</h1>
+        <h2>A <span class="pro">Pro</span>grammer</h2>
+      </div>
+      <img
+        src="../public/assets/images/cloud.png"
+        alt="cloud image"
+        class="bottom-cloud"
+      />
+      <img
+        src="../public/assets/images/mountain.png"
+        alt="mountain image"
+        class="mountain-image"
+      />
+    </section>
+    <section class="middle-container">
+      <div class="profile">
+        <img
+          src="../public/assets/images/Snapchat-378504547-modified.png"
+          alt="Adnan's image"
+        />
+        <h2>Hello.</h2>
+        <p class="intro">
+          I'm Sheikh Adnan, specializing in computer programming and website development. I create tailored software solutions and stunning websites to meet your needs. Let's bring your vision to life!
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2>My Skills</h2>
+        <div class="skill1">
+          <img
+            src="../public/assets/images/62efdf9840dca733692cdd48_web dev basics.jpg"
+            alt="coding-image"
+            class="web-dev-image"
+          />
+          <div>
+            <h3>Web Development</h3>
+            <div class="details">
+              <ul>
+                <h5>frameworks, libraries and tech stacks</h5>
+                <li>Next.js</li>
+                <li>React.js</li>
+                <li>Ejs</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Postgresql</li>
+                <li>MongoDB</li>
+              </ul>
+              <ul>
+                <h5>Languages</h5>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="skill2">
+          <img
+            src="../public/assets/images/download.png"
+            alt="coding-image"
+            class="Programming-image"
+          />
+          <div>
+            <h3>Programming</h3>
+            <div class="details">
+              <ul>
+                <h5>Languages</h5>
+                <li>C</li>
+                <li>C++</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="portfolio">
+        <h2>My projects</h2>
+        <div class="project">
+          <% if(locals.projectDetails){ %>
+             <% projectDetails.forEach((project) => { %>
+          <h3><%= project.projectName %></h3>
+          <img src="<%= project.projectImage %>" alt="project-image" />
+          <div class="links">
+          <a href="<%= project.projectLinkGithub %>">Github</a>
+          <a href="<%= project.projectLinkLiveSite %>">Live Site</a>
+        </div>
+          <% }); %> 
+        <%}%>
+        </div>
+      </div>
+      <hr />
+      <div class="contact-me">
+        <h2>Get in touch</h2>
+        <p class="contact-message">
+          Thank you for visiting my website! if you are looking for expert computer programming or website development services, you've come to the right place.weather you need a custom software solution, a stunning website, or technical consultation, i'm here to help your vision to life.
+          <br>
+          Feel free to reach out to discuss your project, request a quote, or ask any questions. I'm commited to providing high-quality, tailored solutions to meet your needs.
+         <br>
+          Email: adnanaijaz555@gmail.com
+          <br>
+          or simply click the contact me button below. i'll get back to you soon as possible.
+          looking forward working with you!
+          <br>
+          Sheikh Adnan.
+        </p>
+        <a href="mailto:adnanaijaz555@gmail.com" class="btn">CONTACT ME</a>
+      </div>
+    </section>
+    <section class="bottom-container">
+      <div class="footer">
+        <a
+          href="https://www.linkedin.com/in/adnan-aijaz-6a8520259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          class="link1"
+          >LinkedIn</a
+        >
+        <a
+          href="https://x.com/AdnanAijaz6?t=j5jAbP4QUPkEX82QYLL7dA&s=09"
+          class="link2"
+          >Twitter</a
+        >
+        <p class="copyright">&copy; Adnan <%= date %></p>
+      </div>
+    </section>
+  </body>
+</html>
